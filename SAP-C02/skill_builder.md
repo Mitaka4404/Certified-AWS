@@ -14,4 +14,14 @@
       - 암호화 : AWS KMS, AWS CloudHSM
       - AWS Certificate Manager : Elastic Load Balancing, Amazon CloudFront, Amazon API Gateway
       - 중앙 집중식 보안 이벤트 알림 및 감사 : AWS CloudTrail, AWS Security Hub, Amazon Inspector, Amazon GuardDuty, IAM Access Analyzer
-      
+    - 1.3 신뢰할 수 있고 탄력적인 아키텍처를 설계합니다.
+      - 트래픽 균형 조정 : Amazon Route 53, Elastic Load Balancing, AWS Auto Scaling
+      - 서비스 사용 워크로드 대기 시간 감소 : Amazon CloudFront, AWS Global Accelerator
+      - 재해복구 : RPO, RTO
+      - 워크로드 구성요소 및 백업 : AWS Elastic Disaster Recovery, AWS Backup
+    - 1.4 다중 계정 AWS 환경을 설계합니다.
+      - 경고 제공 : AWS CloudTrail, AWS Config, Amazon EventBridge
+    - 1.5 비용 최적화 및 가시성 전략을 결정합니다.
+      - 다중지역 : VPC Peering, AWS Transit Gateway, AWS Direct Connect, AWS Site-to-Site, VPN Endpoint, Amazon CloudFront
+      - 비용 및 청구 관리 : AWS Organizations
+      - 비용 모니터링 : AWS Compute Optimizer, AWS Cost Explorer, Amazon Athena, Amazon QuickSite, AWS Budgets
