@@ -25,3 +25,31 @@
       - 다중지역 : VPC Peering, AWS Transit Gateway, AWS Direct Connect, AWS Site-to-Site, VPN Endpoint, Amazon CloudFront
       - 비용 및 청구 관리 : AWS Organizations
       - 비용 모니터링 : AWS Compute Optimizer, AWS Cost Explorer, Amazon Athena, Amazon QuickSite, AWS Budgets
+  - 2.0 새로운 솔루션을 위한 설계
+    - 2.1 비즈니스 요구 사항을 충족하는 배포 전략을 설계합니다.
+      - AWS CloudFormation -> Updated stack
+      - AWS Systems Manager
+      - AWS CodePipeline : AWS CodeCommit -> AWS CodeBuild -> AWS CodeDeploy
+      - Amazon SageMaker
+    - 2.2 비즈니스 연속성을 보장하는 솔루션을 설계합니다.
+      - RTO, RPO, 비용, 백업과 복원
+      - AWS Elastic Disaster Recovery
+      - Amazon RDS database replication
+      - AWS DataSync, AWS Storage Gateway
+      - AWS CloudWatch - Alarm -> Amazon EventBridge -> [AWS Lambda, Amazon Simple Notification Service]
+    - 2.3 요구 사항에 따라 보안 제어를 결정합니다.
+      - Amazon GuardDuty, AWS Security Hub, AWS WAF, AWS Shield
+      - AWS IAM, AWS Secriets Manager, AWS Config
+      - Interface endpoints, Gateway endpoints, AWS PrivateLink
+    - 2.4 신뢰성 요구 사항을 충족하는 전략을 설계합니다.
+      - 동기/비동기 decoupling
+      - Amazon S3, Cross-Region Replication, Amazon EFS, Amazon FSx
+    - 2.5 성능 목표를 충족하는 솔루션을 설계합니ㅏㄷ.
+      - EC2 instance : Instace family, Instance size
+      - Attached storage : Volume type, Volume size
+      - Other components : Elastic Fabric Adapter
+      - design patterns : Relicas, Buffering, Caching
+      - Amazon DynamoDB, Amazon Neptune
+    - 2.6 솔루션 목표와 목적을 달성하기 위한 비용 최적화 전략 결정
+      - AWS Site-to-Stie VPN, AWS Direct Connect, AWS Transit Gateway
+      - AWS Pricing Caculator, AWS Cost Explorer, AWS Trusted Advisor
