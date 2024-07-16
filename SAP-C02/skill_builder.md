@@ -53,3 +53,31 @@
     - 2.6 솔루션 목표와 목적을 달성하기 위한 비용 최적화 전략 결정
       - AWS Site-to-Stie VPN, AWS Direct Connect, AWS Transit Gateway
       - AWS Pricing Caculator, AWS Cost Explorer, AWS Trusted Advisor
+  - 3.0 기존 솔루션의 지속적인 개선
+    - 3.1 전반적인 운영 우수성을 개선하기 위한 전략 결정
+      - AWS System Manager, AWS Config, AWS OpsWorks
+      - deployment strategies : In-place deployment, Linear deployment, Blue/Green deployment, Canary deployment, All-at-once deployment
+      - AWS CodePipeline, AWS CodeCommit, AWS CodeBuild, AWS CodeDeploy, AWS CloudFormation
+    - 3.2 보안을 개선하기 위한 전략을 결정합니다.
+      - AWS Security Hub, Amazon GuardDuty, Amazon Inspector, Amazon Macie
+      - IAM Access Analyzer, IAM Credential Report
+      - AWS CloudTrail, Amazon CloudWatch Logs, AWS Config
+      - Amazon EventBridge, AWS Config Conformance Packs
+      - AWS Certificate Manager(ACM), AWS Secrets Manager
+      - Patch Manager, AWS OpsWorks
+      - AWS Backup
+    - 3.3 성과 개선을 위한 전략을 결정합니다.
+      - Amazon CloudWatch, Amazon EventBridge, Amazon SNS, AWS Lambda, AWS X-Ray
+      - AWS Auto Scaling, EC2 Fleet, Spot Fleet, Placement Groups
+      - AWS Global Accelerator, Amazon CloudFront
+      - AWS Elastic Disaster Recovery
+    - 3.4 신뢰성을 개선하기 위한 전략을 결정합니다.
+      - AWS DMS, AWS DataSync
+      - Elastic Load Balancing, AWS Auto Scaling, AWS Elastic Beanstalk
+      - Amazon Route 53, Amazon CloudFront, Amazon API GateWay
+    - 3.5 비용 최적화를 위한 기회를 파악합니다.
+      - AWS Config, AWS System Manager
+      - AWS Cost Explorer, AWS Cost & Usage Report, AWS Glue, Amazon Athena
+      - Amazon CloudFront, AWS PrivateLink, AWS AUto Scaling, Amazon EC2, Amazon ECS, Amazon Autora, Amazon CloudWatch
+      - AWS Budgets, Amazon CloudWatch
+      
