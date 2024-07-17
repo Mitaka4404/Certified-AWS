@@ -80,4 +80,21 @@
       - AWS Cost Explorer, AWS Cost & Usage Report, AWS Glue, Amazon Athena
       - Amazon CloudFront, AWS PrivateLink, AWS AUto Scaling, Amazon EC2, Amazon ECS, Amazon Autora, Amazon CloudWatch
       - AWS Budgets, Amazon CloudWatch
-      
+  - 4.0 워크로드 마이그레이션 및 현대화 가속화
+    - 4.1 마이그레이션할 수 있는 기존 워크로드 및 프로세스를 선택합니다.
+      - 7가지 마이그레이션 전략 : Retire, Retain, Rehost(or lift-and-shift), Relocate, Replatform, Repurchase, Refactor,
+    - 4.2 기존 워크로드를 마이그레이션하기 위한 최적의 마이그레이션 접근 방식 결정
+      - AWS Organizations, AWS Control Tower
+      - AWS IAM Identity Center, AWS Directory Service, AWS Managed Microsfot AD, AD Connector
+      - AWS Snowcone, AWS Snowball Edge, AWS Snowmobile
+      - AWS Application Migration service, AWS Application Discovery Service, AWS Migration Hub
+    - 4.3 기존 워크로드에 새로운 아키텍처를 결정합니다.
+      - EC2 Instance family, EC2 instance size, EC2 scaling strategy
+      - Amazon ECR, Amazon ECS, Amazon EKS, AWS Fargate, Amazon EC2
+      - EC2 instance store, Amazon EBS, Volume Gateway
+      - Amazon FSx : Amazon FSx Window File Server, Amazon FSx for Lustre, Amazon FSx for netApp OnTAP
+      - Amazon EFS
+      - Amazon DynamoDB, Amazon Redshift, Self-managed database on Amazon EC2
+    - 4.4 현대화 및 개선 기회를 파악합니다.
+      - Amazon SQS, Amazon SNS, Amazon EventBridge, AWS Step Functions
+      - Amazon FSx for Lustre, Amazon FSx Window File Server, Amazon EFS, Amazon S3
