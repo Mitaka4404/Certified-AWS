@@ -98,3 +98,36 @@
     - 4.4 현대화 및 개선 기회를 파악합니다.
       - Amazon SQS, Amazon SNS, Amazon EventBridge, AWS Step Functions
       - Amazon FSx for Lustre, Amazon FSx Window File Server, Amazon EFS, Amazon S3
+
+## AWS Technical Essentails (Korean)
+- https://explore.skillbuilder.aws/learn/course/15366/aws-technical-essentials-korean-na-hangug-eo-gang-ui
+- Amazon Web Services 소개
+  - 클라우드 컴퓨팅의 6가지 이점
+    - 종량 과금제
+    - 거대한 규모의 경제로 얻게 되는 이점
+    - 용량 추정 불필요
+    - 속도 및 대응력 향상
+    - 비용 절감 실현
+    - 몇 분 만에 전 세계에 배포
+  - 적합한 AWS 리전 선택 : 대기 시간, 가격, 서비스 가용성, 규정 준수
+  - IAM
+    - AWS Identity and Access Management(IAM)는 AWS 계정 및 리소스에 대한 액세스를 관리하는 데 도움이 되는 AWS 서비스 입니다. 또한 AWS 계정 내에서 허용되는 사람과 작업(인증), AWS 리소스를 사용할 권한이 있는 사람 및 작업(권한 부여)에 대한 중앙 집중식 보기를 제공합니다.
+      - IAM 기능
+      - IAM은 글로벌이며 특정 리전에만 국한되지 않습니다. AWS 관리 콘솔에서 모든 리전의 IAM 구성을 보고 사용할 수 있습니다.
+      - IAM은 기본값으로 여러 AWS 서비스와 통합됩니다.
+      - IAM은 MFA를 지원합니다.
+      - IAM은 자격 증명 연동을 지원합니다. 이 연동을 사용하면 기업 네트워크 또는 인터넷 자격 증명 공급자와 같은 다른 곳에 이미 암호가 있는 사용자가 AWS 계정에 임시로 액세스할 수 있습니다.
+      - 모든 AWS 고객은 IAM을 사용할 수 있습니다. 이 서비스는 추가 비용 없이 제공됩니다.
+    - IAM 정책
+      - 액세스를 관리하고 AWS 서비스 및 리소스에 대한 권한을 제공하려면 IAM 정책을 생성하여 IAM 사용자, 그룹 및 역할에 연결합니다.
+      - 정책 구조
+        - 효과 : 문이 허용인지 아니면 명시적 거부인지를 지정합니다. - "Effect": "Deny"
+        - 작업 : 허용 또는 거부될 특정 작업을 설명합니다. - "Action": "iam:CreateUser"
+        - 리소스 : 문에서 다루는 객체를 지정합니다. - "Resource":"arn:aws:iam::account-ID-without-hyphens:user/Bob"
+    - IAM 모범 사례
+      - AWS 루트 사용자 잠그기
+      - 최소 권한 원칙을 따름
+      - 적절하게 IAM 사용
+      - 가능한 경우 IAM 역할 사용
+      - 자격 증명 공급자 사용을 고려
+      - AWS Single Sign-On을 고려 
