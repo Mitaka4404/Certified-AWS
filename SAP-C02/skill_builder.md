@@ -360,3 +360,20 @@
         - Amazon FSx File Gateway는 Windows File Server용 Amazon FSx에서 완전 관리형의 매우 안정적인 파일 공유에 대한 온프레미스 액세스를 최적화한다. SMB 기반 그룹 공유 또는 비즈니스 애플리케이션의 비정형 또는 파일 데이터가 있는 고객은 대기시간이 짧은 요구 사항을 충족하기 위해 온프레미스 액세스가 필요할 수 있다.
         - Volume Gateway는 온 프레미스 애플리케이션에 클라우드에서 지원하는 iSCSI 블록 스토리지 볼륨을 제공한다. Voluem Gateway는 Amazon S3에서 온프레미스 데이터를 자동으로 저장 및 관리하며, 캐시 모드 또는 저장 모드로 작동한다.
         - Tape Gateway는 기존 백업 워크플로를 변경하지 않아도 온프레미스에서 물리적 테이프를 AWS에서 가상 테이프로 대체하는데 사용된다. Tape Gateway는 모든 주요 백업 애플리케이션을 지원하며, 데이터 액세스시 대기 시간을 낮추도록 온프레미스에서 가상 테이프를 캐시한다. 
+- 데이터 전송 및 마이그레이션 서비스
+  - 파일 전송 서비스 
+    - AWS Transfer Family는 Amazon S3 또는 Amazon EFS에서 파일을 직접 송수신할 수 있는 완전관리형 지원을 제공한다. AWS Transfer Family는 Secure File Transfer Protocol(SFTP), File Transfer Protocol Secure(FTPS), File Transfer Protocol(FTP)에 대한 지원을 포함한다.
+  - 데이터 동기화 및 온라인 전송 서비스
+    - AWS DataSync는 온프레미스 스토리지 시스템과 AWS 스토리지 서비스 간, 그리고 여러 AWS 스토리지 서비스간의 데이터 이동을 간소화, 자동화 및 가속화하는 온라인 데이터 전송 서비스다. DataSync는 다음 작업에 사용할 수 있다.
+      - AWS로 활성 데이터세트 마이그레이션
+      - 온프레미스 스토리지 용량을 확보하기 위해 데이터 아카이브
+      - 비즈니스 연속성을 위해 데이터를 AWS에 복제
+      - 분석 및 처리를 위해 클라우드에 데이터 전송
+    - 오프라인 데이터 전송 및 마이그레이션 서비스
+      - AWS Snow Family는 데이터 센터가 아닌 엄격한 환경과 일관된 네트워크 연결이 부족한 위치에서 작업을 실행해야 하는 고객을 돕는다.
+    - 마이그레이션 서비스
+- AWS에서 파일 시스템 워크플로
+  - Amazon EFS는 확장 가능하고 탄력적인 Linux용 클라우드 네이티브 파일 시스템이다. Amazon EFS는 네트워크 파일 시스템(NFS) 프로토콜을 지원한다.
+  - Lustre용 Amazon FSx는 고성능 컴퓨팅(HPC) 워크로드를 위해 Lustre를 기반으로 구축된 AWS 완전관리형 병렬 파일 시스템이다. Lustre용 FSx는 완전관리형 서비스로 구현된 NetApp ONTAP 운영 체제다. NetApp ONTAP용 FSx는 블록 스토리지용 isCSI, POSIX 호환 액세스용 NFS 프로토콜 및 Windows 호환 액세스용 SMB 프로토콜을 지원한다.
+  - OpenZFS용 Amazon FSx는 AWS에서 완전관리형으로 구현한 Open Zettabyte 파일 시스템(ZFS)다. OpenZFS용 FSx는 광범위한 애플리케이션 구현을 위해 NFS및 SMB 프로토콜을 지원한다.
+  - Windows FIle Server용 Amazon FSx는 Windows 환경을 위한 AWS 완전관리형 파일 시스템이다. Windows File Server용 FSx는 SMB(서버 메시지 블록) 프로토콜을 지원한다.
