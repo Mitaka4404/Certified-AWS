@@ -432,3 +432,24 @@
     - AWS Storage Gateway
       - 파일 게이트웨이 모드의 AWS Storage Gateway를 사용하여 기존 Amazon S3 버킷에 온프레미스 데이터를 저장할 수 있다. AWS Storage Gateway를 가상 어플라이언스로 배포하거나 하드웨어 어플라이언스 버전을 구입 할 수 있다.
       - 파일 게이트웨이로 구성된 AWS Storage Gateway를 사용하면 NFS(네트워크 파일 시스템) 또는 SMB(서버 메시지 블록) 프로토콜을 사용하여 Amazon S3 버킷을 로컬 캐싱과 연결할 수 있다. 인터넷이나 AWS Direct Connect 연겨을 통해 AWS File Storage Gateway를 사용하여 데이터를 전송할 수 있다.
+- Access Analyzer
+  - Amazon S3 콘솔에서 Amazon S3용 Access Analyzer를 사용하여 퍼블릭 또는 공유 액세스를 부여하는 ACL(버킷 액세스 제어 목록), 버킷 정책 또는 액세스 포인트 정책이 있는 모든 버킷을 검토할 수 있다.
+  - Access Analyzer for Amazon S3는 인터넷상의 모든 사용자 또는 조직 외부의 AWS 계정을 포함한 다른 AWS 계정에 대한 액세스를 허용하도록 구성된 버킷에 대한 알림을 제공한다. 각 퍼블릭 버킷 또는 공유 버킷에 대해 퍼블릭 액세스 또는 공유 액세스의 수준과 원본을 보고하는 결과가 수신된다.
+  - 세가지 서버 측 암호화 옵션
+    - SSE-S3
+      - Amazon S3 관리 키를 사용한 서버 측 암호화 (SSE-S3)
+      - Amazon S3 관리형 키 (SSE-S3) 에서 서버 측 암호화를 사용하는 경우 각 객체는 고유 키로 암호화된다.
+      - Amazon S3는 추가적인 보안 조치로 주기적으로 교체되는 마스터키를 사용하여 키 자체를 암호화한다.
+      - Amazon S3 서버측 암호화는 가장 강력한 블록 암호 중 하나인 256비트 Advanced Encryption Standard(AES-256)를 사용하여 데이터를 암호화한다.
+    - SSE-KMS
+      - AWS Key Management Service(SSE-KMS)에 저장된 CMK(고객 마스터 키)를 사용한 서버 측 암호화
+      - SSE-KMS는 CMK를 사용한 시기와 사용자를 보여주는 감사 추적도 제공한다.
+      - 고객 관리형 CMK를 생성하고 관리하도록 선택이나 사용자, 서비스 및 리전에 고유한 AWS 관리형 CMK를 사용할 수 있다.
+    - SSE-C
+      - 고객 제공 키를 사용한 서버 측 암호화(SSE-C)
+      - 사용자는 고객 제공 키를 사용한 서버 측 암호화(SSE-C)를 통해 암호화 키를 관리하고, Amazon S3는 디스크에 기록할 때 암호화와 객체에 액세스 할 때 복호화를 관리한다.
+- Amazon S3의 주요 데이터 레이크 활성화 기능
+  - 컴퓨팅에서 스토리지 분리
+  - 중앙 집중식 데이터 아키텍처
+  - 클러스터리스 및 서버리스 AWS 서비스와의 통합
+  - 표준화된 API
