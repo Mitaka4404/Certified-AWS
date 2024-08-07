@@ -585,3 +585,20 @@
 - AWS Application Migration Service
   - AWS Appication Migration Service(AWS MGN)는 퍼블릭 리전, AWS GovCloud(미국) 및 AWS Outposts를 포함하여 애플리케이션을 AWS 클라우드로 마이그래이션 하는 과정을 간소화하고, 가속화하고 비용을 줄이는 고도로 자동화된 리프트 앤 시프트(리호스트) 솔루션이다.
   - AWS MGN을 사용하여 호환성 문제, 성능영향 또는 긴 전환 기간 없이 물리적, 가상 또는 클라우드 서버를 신속하게 리프트 앤 시프트 할 수 있다. AWS MGN은 소스 서버를 AWS 계정에 지속적으로 복제한다. 그런 다음 마이그레이션 할 준비가 되면 AWS에서 서버를 자동으로 변환하고 시작하므로 AWS 클라우드가 가진 비용 절감, 생산성, 복원력, 민첩성을 빠르게 활용할 수 있다.
+
+## AWS Database Offerings
+- AWS 서비스
+  - Amazon RDS
+    - Amazon Relational Database Service(RDS)는 클라우드에서 관계형 데이터베이스를 더욱 쉽게 설치하고 운영하며 조정할 수 있는 웹 서비스이다. Amazon RDS를 사용하면 OS 패치 적용, 데이터베이스 업데이트 및 백업과 같은 일반 데이터베이스 관리작업을 관리할 수 있다. 지원되는 데이터베이스 엔진에는 PostgreSQL, MySQL, MariaDB, Oracle 및 Microsfot SQL Server가 포함된다.
+  - Amazon Aurora
+    - Amazon Aurora는 관리형 데이터베이스 서비스 Amazon RDS의 일부에 속한다. Aurora는 MySQL 및 PostgreSQL과 호환된다. Aurora를 사용하면 기존 엔터프라이즈 데이터베이스의 성능과 가용성을 오픈 소스 데이터베이스의 간편함 및 경제성과 결합할 수 있다.
+  - Amazon DynamoDB
+    - Amazon DynamoDB는 완전 관리형의 키-값 비관계형 데이터베이스 서비스로서 원활한 확장성과 함께 빠르고 예측 가능한 성능을 제공한다. DynamoDB를 사용하면 데이터를 저장 및 검색하고 어떤 수준의 요청 트래픽이라도 처리할 수 있는 데이터베이스 테이브를 생성할 수 있다. 가동 중지 또는 성능저하 없이 테이블의 처리용량을 확장 또는 축소할 수 있다.
+  - Amazon DocumentDB
+    - Amazon DocumentDB(MongoDB와 호환)는 미션 크리티컬 MongoDB 워크로드를 대규모로 운용할 때 필요한 성능, 확장성, 가용성을 제공하도록 처음부터 설계되었다. Amazon DocumentDB에서는 스토리지와 컴퓨팅이 분리되어 각각 독립적으로 조정할 수 있다.
+  - Amazon ElastiCache
+    - Amazon ElastiCache는 완전 관리형 Redis 및 Memcached인 메모리 데이터 스토어를 제공한다. 처리량이 많고 지연시간이 짧ㅅ은 인 메모리 데이터 스토어에서 데이터를 검색하여 데이터 집약적 앱을 구축하거나 기존 앱 성능을 개선할 수 있다.
+  - Amazon Neptune
+    - Amazon Neptune은 빠르고 안정적인 완전 관리형 그래프 데이터베이스 서비스에 속하며, 상호 연결성이 높은 데이터 집합을 활용하는 애플리케이션에 사용된다. Neptune은 고가용성을 위한 읽기 전용 복제본을 제공한다. 특정 시점 복사본을 생성할 수 있으며, 가용 영역간 복제를 통해 Amazon Simple Storage Service(S3)로의 지속적 백업을 구성할 수 있다.
+  - Amazon Redshift
+    - Amazon Redshift는 페타바이트 규모의 엔터프라이즈 급 완전관리형 데이터 웨어하우징 서비스이다. Amazon Redshift를 사용하면 대용량 병렬 처리와 열 기반 데이터 스토리지, 그리고 매우 효율적인 데이터 압축 인코딩 방식을 조합하여 스토리지 효율성과 쿼리 성능 최적화를 구현할 수 있다.
